@@ -1,6 +1,7 @@
 /* Importer la police Montserrat de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Styles globaux */
 * {
   margin: 0;
   padding: 0;
@@ -12,37 +13,31 @@ body {
   line-height: 1.6;
   color: #333;
   background-color:#F7F7F9;
+  max-width: 1900px;
+  margin: auto;
 }
 
+/* En-tête */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 143px; 
   background-color: #fff;
-height: 72px;
-padding: 16px 143px;
+  width: 1900px;
+  
 }
 
 .logo {
   font-size: 18px;
   font-weight: 700;
-  text-align: center;
-  text-decoration-skip-ink: none;
   color: #6c63ff;
-  padding: 10px 12px;
 }
 
 nav ul {
   display: flex;
   gap: 20px;
   list-style: none;
-  width: 258px;
-  height: 40px;
-  top: 16px;
-  left: 1039px;
-  gap: 8px;
-  padding: 10px 12px;
 }
 
 nav a {
@@ -50,24 +45,25 @@ nav a {
   color: #333;
   font-weight: 500;
   padding: 10px 12px;
-  gap: 10px; 
 }
 
 nav a:hover {
   color:#7F8CFF;
 }
 
+
+
+/* Introduction */
 .intro {
   text-align: center;
   padding: 50px 20px;
   background-color: #ffffff;
-  height: 846px;
-  top: 71px;
-  padding: 289px 260px;
-  gap: 0px;
-  opacity: 0px;
   border-bottom-left-radius: 165px;
   margin-bottom: 150px;
+  padding: 289px 260px;
+  width: 1900px;
+ 
+ 
 }
 
 .intro h1 {
@@ -80,7 +76,7 @@ nav a:hover {
   text-decoration-skip-ink: none;
   width: 920px;
   height: 122px;
-margin-left: 20%;
+  margin-left: 20%;
 }
 
 .intro p {
@@ -90,20 +86,19 @@ margin-left: 20%;
   color: #344563;
   line-height: 28px;
   text-align: left;
-  text-decoration-skip-ink: none;
-width: 920px;
-margin-left: 20%;
+  width: 920px;
+  margin-left: 20%;
 }
 
 .intro div {
-color:#7F8CFF;
-width: 120px;
-height: 24px;
-gap: 16px;
-font-size: 16px;
-font-weight: 500;
-margin-bottom: 15px;
-margin-left: 20%;
+  color:#7F8CFF;
+  width: 120px;
+  height: 24px;
+  gap: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-left: 20%;
 }
 
 .social-links {
@@ -111,6 +106,9 @@ margin-left: 20%;
   display: flex;
   align-items: center;
 }
+
+
+
 
 #E4{
   top: 400px;
@@ -206,9 +204,11 @@ margin-left: 20%;
   flex-direction: column;
   align-items: center;
   gap: 40px;
-margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
+
+/* Cartes des projets */
 .project-card {
   display: flex;
   align-items: center;
@@ -237,19 +237,19 @@ margin-bottom: 50px;
   background-position: 100%;
   background-repeat: no-repeat;
   flex: 1,5;
-  width: 800px;
-height: 448px;
-border-radius: 8px 8px;
-margin: 25px;
+  width: 550px;
+  height: 448px;
+  border-radius: 8px 8px;
+  margin: 25px;
 }
 
 .project-details {
   flex: 1,5;
   display: flex;
   flex-direction: column;
-padding: 24px 0px 0px 0px;
-gap: 24px;
-margin: 0px 25px 0px 25px;
+  padding: 24px 0px 0px 0px;
+  gap: 24px;
+  margin: 0px 25px 0px 25px;
 }
 
 .project-title {
@@ -267,7 +267,7 @@ margin: 0px 25px 0px 25px;
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
-line-height: 24px;
+  line-height: 24px;
 }
 
 .project-meta .company{ 
@@ -277,12 +277,12 @@ line-height: 24px;
 
 .project-meta .dot {
   color: #C1C7D0;
-margin-left: 10px;
+  margin-left: 10px;
 }
 
 .project-meta .dot02 {
   color: #C1C7D0;
-margin-left: 10px;
+  margin-left: 10px;
 }
 
 .project-meta .year{
@@ -290,7 +290,7 @@ margin-left: 10px;
   }
 
 .project-meta .year02{
-margin-left: 8px;
+ margin-left: 8px;
 }
 
 .project-meta .role {
@@ -305,11 +305,11 @@ margin-left: 8px;
   font-size: 16px;
   color:  #344563;
   font-weight: 400;
-line-height: 24px;
-width: 496px;
-height: 50px;
-line-height: 24px;
-display: flex;
+  line-height: 24px;
+  width: 496px;
+  height: 50px;
+  line-height: 24px;
+  display: flex;
 }
 
 .project-tags {
@@ -328,29 +328,29 @@ display: flex;
   background-color: #eef0fc;
   color: #6366f1;
   font-size: 12px;
-padding: 4px 12px;
-border-radius: 8px;
-font-weight: 500;
-gap: 8px;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  gap: 8px;
 }
 
 .project-button {
- background-color: transparent;
- border: 1px solid #396DF2;
- color: #396DF2;
- padding: 12px 0px 0px 0px;
- font-size: 1rem;
- font-weight: 600;
- border-radius: 8px;
- cursor: pointer;
- transition: all 0.3s ease;
- width: 126px;
- height: 48px;
- top: 16px;
- justify-content: center;
- display: flex;
- margin-bottom: 80px;
- margin-top: 15px;
+  background-color: transparent;
+  border: 1px solid #396DF2;
+  color: #396DF2;
+  padding: 12px 0px 0px 0px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 126px;
+  height: 48px;
+  top: 16px;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 80px;
+  margin-top: 15px;
 }
 
 .project-button02 {
@@ -366,11 +366,11 @@ gap: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 126px;
- height: 48px;
- top: 16px;
- justify-content: center;
- display: flex;
- margin-top: 15px;
+  height: 48px;
+  top: 16px;
+  justify-content: center;
+  display: flex;
+  margin-top: 15px;
 }
 
 .project-button:hover {
@@ -389,13 +389,16 @@ gap: 8px;
  bottom: 80px;
 }
 
+
+/* Section About */
 .about {
   display: flex;
   justify-content: space-evenly;
   padding: 100px 100px;
   background-color: #ffffff;
   border-top-right-radius: 165px;
- height: 800px;
+  height: 800px;
+  width: 1900px;
 }
 
 .about-left {
@@ -459,7 +462,7 @@ gap: 8px;
 }
 
 .about-right {
- margin-right: 150px;
+  margin-right: 150px;
 }
 
 .skills-section h2 {
@@ -529,6 +532,7 @@ gap: 8px;
   margin-left: auto;
 }
 
+/* Section Contact */
 .contact {
   color: #fff;
   display: flex;
@@ -537,6 +541,7 @@ gap: 8px;
   align-items: center;
   padding: 0px 0px;
   height: 400px;
+  width: 1900px;
 }
 
 .contact-section {
@@ -566,7 +571,7 @@ gap: 8px;
   margin-left: 600px;
   margin-bottom: 30px;
   color: #EBEBFF;
-width: 569px;
+  width: 569px;
 }
 
 .contact-section form {
@@ -578,7 +583,7 @@ width: 569px;
 
 .contact-section input, 
 .contact-section textarea {
-  width: 447px;
+  width: 100%;
   max-width: 500px;
   height: 48px;
   padding: 10px;
@@ -624,9 +629,9 @@ width: 569px;
 }
 
 #E5{
-top: 320px;
-right: 650px;
-position: relative;
+  top: 320px;
+  right: 650px;
+  position: relative;
 }
 
 
@@ -665,4 +670,90 @@ position: relative;
   top: 316px;
   right: 1030px;
   position: relative;
+}
+
+
+/* Responsive pour les écrans max-width: 1900px et min-width: 650px */
+@media (max-width: 1900px) and (min-width: 450px) {
+  body {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  header {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .intro {
+    padding: 150px 20px;
+    margin-bottom: 100px;
+    border-bottom-left-radius: 100px;
+    width: 100%;
+  }
+
+  .intro h1, .intro p, .intro div {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  .project-card,
+  .project-card01 {
+    width: 90%;
+    flex-direction: column;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .project-details {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 50px 20px;
+    height: auto;
+    border-top-right-radius: 80px;
+    width: 100%;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .skills-cards {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contact-section {
+    padding: 50px 20px;
+    border-top-left-radius: 80px;
+    width: 100%;
+  }
+
+  .contact-section p {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
 }
